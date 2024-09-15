@@ -45,7 +45,7 @@ function Dashboard() {
                     </div>
                     <div className="history-con">
                         <History />
-                        <h2 className="salary-title">Min <span>Salary</span>Max</h2>
+                        <h2 className="salary-title">Minimum <span>All Income</span>Maximum</h2>
                         <div className="salary-item">
                             <p>
                                 {rupee}{Math.min(...incomes.map(item => item.amount))}
@@ -54,7 +54,7 @@ function Dashboard() {
                                 {rupee}{Math.max(...incomes.map(item => item.amount))}
                             </p>
                         </div>
-                        <h2 className="salary-title">Min <span>Expense</span>Max</h2>
+                        <h2 className="salary-title">Minimum <span>Expense</span>Maximum</h2>
                         <div className="salary-item">
                             <p>
                                 {rupee}{Math.min(...expenses.map(item => item.amount))}
@@ -91,10 +91,11 @@ const DashboardStyled = styled.div`
                     border: 2px solid #FFFFFF;
                     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
                     border-radius: 20px;
-                    padding: 1rem;
+                    padding: 2rem;
                     p{
-                        font-size: 3.5rem;
-                        font-weight: 700;
+                     color: var(--color-white);
+                        font-size: 1.5rem;
+                        font-weight: 600;
                     }
                 }
 
@@ -107,40 +108,48 @@ const DashboardStyled = styled.div`
                     p{
                         color: var(--color-green);
                         opacity: 0.6;
-                        font-size: 4.5rem;
+                        font-size: 1.5rem;
                     }
                 }
             }
         }
 
-        .history-con{
-            grid-column: 4 / -1;
-            h2{
-                margin: 1rem 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .salary-title{
-                font-size: 1.2rem;
-                span{
-                    font-size: 1.8rem;
-                }
-            }
-            .salary-item{
-                background: #FCF6F9;
-                border: 2px solid #FFFFFF;
-                box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
-                padding: 1rem;
-                border-radius: 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                p{
-                    font-weight: 600;
-                    font-size: 1.6rem;
-                }
-            }
+       .history-con {
+    grid-column: 4 / -1;
+
+    h2 {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .salary-title {
+        font-size: 1.1rem;
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    .salary-item {
+        background: #f9fafb;
+        border: 2px solid #e0e6ed;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 1rem;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: rgba(34, 34, 96, 0.9);
+        }
+    }
+}
+
         }
     }
 `;

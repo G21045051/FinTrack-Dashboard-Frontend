@@ -5,8 +5,7 @@ import { useGlobalContext } from '../context/globalContext';
 function History() {
     const { transactionHistory } = useGlobalContext();
 
-    // Assuming transactionHistory is a function that returns an array
-    const history = transactionHistory();
+     const history = transactionHistory();
 
     return (
         <HistoryStyled>
@@ -32,16 +31,18 @@ const HistoryStyled = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
     .history-item {
-        background: #FCF6F9;
-        border: 2px solid #FFFFFF;
-        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+        background: #f9fafb;
+        border: 2px solid #e0e6ed;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
         padding: 1rem;
-        border-radius: 20px;
+        border-radius: 8px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 `;
+
 
 export default History;

@@ -102,46 +102,71 @@ const ExpenseFormStyled = styled.form`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    input, textarea, select{
+
+    input, textarea, select {
         font-family: inherit;
         font-size: inherit;
         outline: none;
         border: none;
-        padding: .5rem 1rem;
-        border-radius: 5px;
-        border: 2px solid #fff;
-        background: transparent;
+        padding: 0.75rem 1.25rem;
+        border-radius: 8px;
+        border: 2px solid #e0e6ed;
+        background: #f9fafb;
         resize: none;
-        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
         color: rgba(34, 34, 96, 0.9);
-        &::placeholder{
+        transition: all 0.3s ease;
+        
+        &:focus {
+            border-color: #a0aec0;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        &::placeholder {
             color: rgba(34, 34, 96, 0.4);
         }
     }
-    .input-control{
-        input{
+
+    .input-control {
+        input {
             width: 100%;
         }
     }
 
-    .selects{
+    .selects {
         display: flex;
         justify-content: flex-end;
-        select{
+
+        select {
             color: rgba(34, 34, 96, 0.4);
-            &:focus, &:active{
+            transition: color 0.3s ease;
+
+            &:focus, &:active {
                 color: rgba(34, 34, 96, 1);
             }
         }
     }
 
-    .submit-btn{
-        button{
-            box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
-            &:hover{
-                background: var(--color-green) !important;
+    .submit-btn {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            background-color: var(--color-green);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            
+            &:hover {
+                background-color: #28a745;
+                box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
             }
         }
     }
 `;
+
 export default ExpenseForm

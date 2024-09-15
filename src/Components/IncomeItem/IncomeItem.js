@@ -99,71 +99,77 @@ function IncomeItem({
 }
 
 const IncomeItemStyled = styled.div`
-    background: #FCF6F9;
-    border: 2px solid #FFFFFF;
-    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
-    border-radius: 20px;
+    background: #f9fafb;
+    border: 2px solid #e0e6ed;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
     width: 100%;
-    color: #222260;
-    .icon{
+    color: rgba(34, 34, 96, 0.9);
+
+    .icon {
         width: 80px;
         height: 80px;
-        border-radius: 20px;
-        background: #F5F5F5;
+        border-radius: 8px;
+        background: #f9fafb;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid #FFFFFF;
-        i{
+        border: 2px solid #e0e6ed;
+        i {
             font-size: 2.6rem;
+            color: rgba(34, 34, 96, 0.9);
         }
     }
 
-    .content{
+    .content {
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: .2rem;
-        h5{
+        gap: 0.2rem;
+
+        h5 {
             font-size: 1.3rem;
             padding-left: 2rem;
             position: relative;
-            &::before{
+
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
-                width: .8rem;
-                height: .8rem;
+                width: 0.8rem;
+                height: 0.8rem;
                 border-radius: 50%;
                 background: ${props => props.indicator};
             }
         }
 
-        .inner-content{
+        .inner-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .text{
+
+            .text {
                 display: flex;
                 align-items: center;
                 gap: 1.5rem;
-                p{
+
+                p {
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    color: var(--primary-color);
-                    opacity: 0.8;
+                    color: rgba(34, 34, 96, 0.8);
                 }
             }
         }
     }
 `;
+
 
 export default IncomeItem
