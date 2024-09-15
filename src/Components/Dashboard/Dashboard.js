@@ -149,8 +149,7 @@ const DashboardStyled = styled.div`
         }
     }
 }
-
-        }
+  }
     }
 `;
 

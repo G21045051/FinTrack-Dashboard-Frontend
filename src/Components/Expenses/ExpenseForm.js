@@ -71,13 +71,15 @@ function ExpenseForm() {
                 <select required value={category} name="category" id="category" onChange={handleInput('category')}>
                     <option value="" disabled >Select Option</option>
                     <option value="education">Education</option>
-                    <option value="groceries">Groceries</option>
+                    <option value="canteen">Canteen</option>
+                    <option value="viswakarma Mess">Viswakarma Mess</option> 
+                    <option value="rajputana Mess">Rajputana Mess</option>
                     <option value="health">Health</option>
                     <option value="subscriptions">Subscriptions</option>
                     <option value="takeaways">Takeaways</option>
                     <option value="clothing">Clothing</option>  
-                    <option value="travelling">Travelling</option>  
-                    <option value="other">Other</option>  
+                    <option value="travelling">Travelling</option> 
+                     <option value="other">Other</option>  
                 </select>
             </div>
             <div className="input-control">
