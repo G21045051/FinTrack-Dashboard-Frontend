@@ -76,9 +76,9 @@ function Form() {
                     onChange={handleInput('category')}
                 >
                     <option value="" disabled>Select Option</option>
-                    <option value="salary">Salary</option>
+                    <option value="pocket Money">Pocket Money</option>
                     <option value="freelancing">Freelancing</option>
-                    <option value="investments">Investments</option>
+                    <option value="investment on groww">Investment on groww</option>
                     <option value="stocks">Stocks</option>
                     <option value="bank">Bank Transfer</option>  
                     <option value="other">Other</option>  
