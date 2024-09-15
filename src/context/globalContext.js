@@ -3,8 +3,8 @@ import axios from 'axios'
 
 
 // const BASE_URL = "http://localhost:5000/api/v1/"; 
-const BASE_URL = "https://backend-expense-tracker-app.onrender.com/api/v1/"; 
-// const BASE_URL = "https://backend-expense-tracker-app.onrender.com"; 
+// const BASE_URL = "https://backend-expense-tracker-app.onrender.com/api/v1/"; 
+const BASE_URL = "https://backend-expense-tracker-app.onrender.com"; 
 // const BASE_URL =process.env.REACT_APP_BASE_URL;
 
 
